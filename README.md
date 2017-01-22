@@ -33,6 +33,8 @@ CH+ == Enter.
 
 Press the 'MUTE' key to begin the Tic-Tac-Toe Mini-game.
 
+Method and Design
+-------------------
 
 The general design process involved the following stages:
 ~~~
