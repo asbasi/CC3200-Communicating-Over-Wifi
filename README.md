@@ -4,6 +4,7 @@ A fully functional T-9 Texting scheme that augmented the existing two-way board-
 
 Uses an Adrafruit OLED Breakout Board - 16-bit Color 1.5" (product id: 1431), a Texas Instruments CC3200 LaunchPad (CC3200-LAUNCHXL), a Vishay TSOP31336 IR receiver module, and an AT&T S10-S3 Remote Control.
 
+~~~
 The general design process involved the following stages: 
 1.Setting up an Amazon Web Services account.
 2.Creating a Device shadow for both CC3200 boards.
@@ -12,7 +13,7 @@ The general design process involved the following stages:
 5.Integrate the IR signal decoding code from Lab Assignment 3 into the MQTT secure client code.
 6.Modify the “Mqtt_Recv()” function so that it will now display the payload onto the lower half (receiver side) of the OLED display.
 7.Modify the “MqttClient()” function so that it will now publish the message the user has typed onto the OLED using the IR Remote when he or she hits the ‘ENTER’ key (which was the ‘CH+’ key for us).
-
+~~~
 
 Here’s an outline of our code and the process by which it sends and receives messages over the AWS MQTT broker. 
 
